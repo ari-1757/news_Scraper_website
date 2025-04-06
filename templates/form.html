@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headline News Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>📰 Headline News Scraper</h1>
+
+    <p class="intro">
+        In a digital world flooded with information, staying updated with the latest headlines can be overwhelming.
+        This tool simplifies that by collecting top headlines from any specific news category — like Technology, Sports, or Business — directly from public news websites.
+    </p>
+
+    <form method="POST" action="/submit">
+        <h2>📌 Paste the news category page URL</h2>
+        <input type="url" name="url" placeholder="e.g. https://www.thehindu.com/sci-tech/technology/" required>
+        <input type="submit" value="Submit 🔍">
+    </form>
+
+    <p class="outro">
+        🛠️ This tool visits the news site, scrapes headlines, summaries, and tags, and prepares an Excel file for download. It saves you time and effort by organizing the latest updates in one place.
+    </p>
+
+    <p style="text-align:center;">
+        <a href="/download">📁 Download Previous Excel File</a>
+    </p>
+</body>
+</html>

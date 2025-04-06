@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download News Excel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>✅ Your News Headlines are Ready!</h1>
+
+    <div class="message">
+        <p>We've successfully scraped the news from your provided URL and created an Excel file for you.</p>
+    </div>
+
+    <div class="download">
+        <a href="{{ file_url }}" download>
+            <button>📥 Download Excel File</button>
+        </a>
+    </div>
+
+    <p class="back">
+        <a href="/">🔙 Back to Home</a>
+    </p>
+</body>
+</html>
